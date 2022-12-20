@@ -1,0 +1,109 @@
+body {
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6rem;
+  color: black;
+  background-color: none;
+  padding: 15px;
+}
+
+
+.game-intro {
+    background-image: url("../images/background-yellow.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.game-intro p {
+  font-size: 16px;
+  font-family: "Verdana";
+}
+
+#intro-blurb {
+  font-size: 22px;
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#game-title {
+    font-size: 70px;
+}
+
+#excited-img {
+    width: 10%;
+}
+
+#background-img {
+  height: 90%;
+  width: 95%;
+}
+
+#mixed-img {
+  width: 25%;
+}
+
+#arrows-img {
+  width: 180px;
+}
+
+body button {
+  font-size: 30px;
+  background-color: purple;
+  color: rgb(248, 248, 79);
+  padding: 20px 40px;
+  border: 0;
+  box-shadow: 0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+#mute-button {
+  display: flex;
+  align-items: flex-start;
+}
+
+#game-board {
+  float: left;
+  padding: 20px 0px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#end-score-h2 {
+  font-size:32px;
+  color:rgb(218, 199, 28);
+}
+
+#dizzy-img {
+  height: 15rem;
+  margin-bottom: 30px;
+}
+
+#oops {
+color:rgb(218, 199, 28);
+}
+
+.game-over {
+  background-image: url("../images/gothic-wallpaper.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  padding: 0% 10%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+}

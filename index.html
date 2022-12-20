@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/laughing.png" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>The Smiley Game :)</title>
+</head>
+<body>
+    <div class="game-intro">
+        <h1 id="game-title">The Smiley Game</h1>
+        <img src="./images/excited-emoji.png" alt="excited emoji" id="excited-img" />
+        <h3 id="intro-blurb">Welcome to The Smiley Game!  Move your smiley away from the falling rocks.  Catch the emojis to get extra points.  Are you skilled enough to get a high score?  Let's find out!  Click 'Start Game' to play!</h3>
+        <img src="./images/mixed-emoji.PNG" alt="mixed emojis" id="mixed-img" />
+        <br />
+        <div id="arrows-img">
+            <p>Use the left and right arrow to move!</p>
+            <img src="./images/left-and-right.png" alt="arrows" id="arrows-img" />
+          </div>
+          <br />
+        <button id="start-button">Start Game</button>
+      </div>
+    
+      <div id="game-board">
+        <canvas id="canvas" width="1700" height="900"></canvas>
+        <br />
+        <button id="mute-button">Mute</button>
+      </div>
+
+      <div class="game-over">
+        <h2 id="end-score-h2">Your Score:  <span id="final-score">0</span></h2>
+        <div>
+          <h1 id="oops">Oops! You have Died.</h1>
+        </div>
+          <img src="./images/dizzy-face.png" alt="dizzy emoji" id="dizzy-img" />
+          <br />
+        <button id="restart-button">Restart Game</button>
+      </div>
+      
+
+    <script src="js/index.js"></script>
+</body>
+</html>
