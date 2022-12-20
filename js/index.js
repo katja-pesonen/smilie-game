@@ -8,12 +8,14 @@ let muteBtn = document.querySelector("#mute-button");
 let smileyLogo = document.querySelector("#excited-img");
 let mixedLogo = document.querySelector("#mixed-img");
 let arrows = document.querySelector("#arrows-img");
+
 let dizzyLogo = document.querySelector("#dizzy-img");
 let blurb = document.querySelector("#intro-blurb");
 let gameIntroDiv = document.querySelector(".game-intro");
 let gameBoardDiv = document.querySelector("#game-board");
 let gameOverDiv = document.querySelector(".game-over");
 let finalScoreEnd = document.querySelector("#final-score");
+
 
 // music & sound effects
 let gameMusic = new Audio("audio/game-music.mp3");
@@ -26,9 +28,11 @@ let rewardMusic = new Audio("audio/ding-sound-effect.mp3");
 rewardMusic.volume = 0.5; 
 
 
+
 //field image
 const imgField = new Image();
 imgField.src = 'images/field-background.jpg';
+
 
 // falling rocks images
 const imgRock1 = new Image();
@@ -39,6 +43,7 @@ const imgRock3 = new Image();
 imgRock3.src = 'images/Kuva3.png';
 const imgRock4 = new Image();
 imgRock4.src = 'images/Kuva4.png';
+
 
 // falling smileys images
 const imgSmiley1 = new Image();
@@ -58,6 +63,7 @@ imgSmiley7.src = 'images/upside-down.png';
 const imgSmiley8 = new Image();
 imgSmiley8.src = 'images/smirk.png';
 
+
 //player smiley image
 const imgPlayer = new Image();
 imgPlayer.src = 'images/smiling.png';
@@ -74,6 +80,7 @@ let isPlayerGoingRight = false;
 let score = 0;
 let gameOver = false;
 let animationFrameId = 0;
+
 
 // rock variables
 const rockWidth = 80;
@@ -94,7 +101,7 @@ function drawPlayer() {
 }
 
 
-  //generate random 'X' positions for falling rocks
+//generate random 'X' positions for falling rocks
 let randomXPlacement = () => {
   let biggestX = canvas.width - 20;
   let smallestX = 20;
@@ -127,6 +134,7 @@ rockArray = [
   { img: imgRock4, x: randomXPlacement(), y: -5200, width: 100, height: 100 },
 ];
 
+
 //smileys group information
 smileysArray = [
   { img: imgSmiley1, x: randomXPlacement(), y: -200, width: 100, height: 100 },
@@ -138,6 +146,7 @@ smileysArray = [
   { img: imgSmiley7, x: randomXPlacement(), y: -4300, width: 110, height: 110 },
   { img: imgSmiley8, x: randomXPlacement(), y: -5000, width: 90, height: 90 },
 ];
+
 
 
 //When "Start Game" is clicked: 
@@ -173,6 +182,7 @@ function startGame() {
   if (score > 300) {rockSpeedValue = 7}
   if (score > 350) {rockSpeedValue = 8}
   if (score > 400) {rockSpeedValue = 9}
+
 
 // for-loop for the falling rocks
   for (let i = 0; i < rockArray.length; i++) {
@@ -213,6 +223,7 @@ function startGame() {
       finalScoreEnd.innerHTML = score
     }
   }
+
 
 
   // for-loop for the falling smileys
@@ -308,6 +319,7 @@ function drawEnding() {
     }
   });
 
+  
   document.addEventListener("keyup", event => {
     isPlayerGoingLeft = false;
     isPlayerGoingRight = false;
